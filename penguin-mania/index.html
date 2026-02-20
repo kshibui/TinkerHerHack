@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confidence Boost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🌸 SheGuard</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="analyzer.html">Analyzer</a>
+        <a href="confidence.html">Confidence</a>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Daily Confidence Space</h2>
+
+    <h3>💬 Affirmation</h3>
+    <p id="quote">Click below for motivation.</p>
+    <button onclick="newQuote()">Get Affirmation</button>
+
+    <hr>
+
+    <h3>🌟 One Small Win Today</h3>
+    <input type="text" id="winInput" placeholder="Write one thing you did well today">
+    <button onclick="saveWin()">Save Win</button>
+    <p id="savedWin"></p>
+
+    <hr>
+
+    <h3>💖 Body Reminder</h3>
+    <p>Your body is working for you every day. Hormones fluctuate. Energy fluctuates. Your worth does NOT.</p>
+
+    <hr>
+
+    <h3>🌿 5-Minute Breathing Guide</h3>
+    <p>Inhale for 4 seconds → Hold 4 seconds → Exhale 4 seconds</p>
+    <button onclick="startBreathing()">Start</button>
+    <p id="breathingText"></p>
+
+    <hr>
+
+    <h3>🆘 Tough Day?</h3>
+    <p>If today feels overwhelming, pause. Drink water. Step outside. Call someone safe. You are not weak for needing support.</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confidence Boost</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🌸 SheGuard</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="second.html">Analyzer</a>
+        <a href="third.html">Confidence</a>
+    </div>
+</div>
+
+<div class="card">
+    <h2>💜 Confidence Self-Check Quiz</h2>
+
+<form id="confidenceQuiz">
+
+<p>1. Do you speak your ideas in team discussions?</p>
+<input type="radio" name="q1" value="2"> Always<br>
+<input type="radio" name="q1" value="1"> Sometimes<br>
+<input type="radio" name="q1" value="0"> Rarely<br><br>
+
+<p>2. Are you comfortable asking questions when confused?</p>
+<input type="radio" name="q2" value="2"> Yes<br>
+<input type="radio" name="q2" value="1"> Sometimes<br>
+<input type="radio" name="q2" value="0"> No<br><br>
+
+<p>3. Do you believe you belong in tech?</p>
+<input type="radio" name="q3" value="2"> Absolutely<br>
+<input type="radio" name="q3" value="1"> Trying to believe<br>
+<input type="radio" name="q3" value="0"> Not sure<br><br>
+
+<p>4. Do you try even if you might fail?</p>
+<input type="radio" name="q4" value="2"> Yes<br>
+<input type="radio" name="q4" value="1"> Sometimes<br>
+<input type="radio" name="q4" value="0"> No<br><br>
+
+<button type="button" onclick="calculateScore()">See My Result</button>
+
+</form>
+
+<h3 id="result"></h3>
+</div>
+
+<br>
+
+<button onclick="unlockBadge(1)">Unlock Idea Starter</button>
+<button onclick="unlockBadge(2)">Unlock Spoke Up</button>
+<button onclick="unlockBadge(3)">Unlock First Feature</button>
+<button onclick="unlockBadge(4)">Unlock Hackathon Ready</button>
+<button onclick="alert('Working!')">Test Button</button>
+    <h2>Daily Confidence Space</h2>
+
+    <h3>💬 Affirmation</h3>
+    <p id="quote">Click below for motivation.</p>
+    <button onclick="newQuote()">Get Affirmation</button>
+
+    <hr>
+
+    <h3>🌟 One Small Win Today</h3>
+    <input type="text" id="winInput" placeholder="Write one thing you did well today">
+    <button onclick="saveWin()">Save Win</button>
+    <p id="savedWin"></p>
+
+    <hr>
+
+    <h3>💖 Body Reminder</h3>
+    <p>Your body is working for you every day. Hormones fluctuate. Energy fluctuates. Your worth does NOT.</p>
+
+    <hr>
+
+    <h3>🌿 5-Minute Breathing Guide</h3>
+    <p>Inhale for 4 seconds → Hold 4 seconds → Exhale 4 seconds</p>
+    <button onclick="startBreathing()">Start</button>
+    <p id="breathingText"></p>
+
+    <hr>
+
+    <h3>🆘 Tough Day?</h3>
+    <p>If today feels overwhelming, pause. Drink water. Step outside. Call someone safe. You are not weak for needing support.</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stress Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>🌸 SheGuard</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="second.html">Analyzer</a>
+        <a href="third.html">Confidence</a>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Stress Risk Analyzer</h2>
+
+    <input type="number" id="mood" placeholder="Mood (1-5)">
+    <input type="number" id="sleep" placeholder="Sleep Hours">
+    <input type="number" id="screen" placeholder="Screen Time">
+    <input type="number" id="study" placeholder="Work/Study Hours">
+
+    <select id="social">
+        <option value="yes">Social Interaction - Yes</option>
+        <option value="no">Social Interaction - No</option>
+    </select>
+
+    <select id="cycle">
+        <option value="no">Cycle Stress - No</option>
+        <option value="yes">Cycle Stress - Yes</option>
+    </select>
+
+    <button onclick="calculateStress()">Analyze</button>
+
+    <div id="result"></div>
+
+    <div class="meter">
+    <div id="meterFill"></div>
+</div>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
