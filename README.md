@@ -130,7 +130,6 @@ No login required. Runs directly in the browser.
 Impact:
 Reduces stigma and creates a safe, judgment-free digital space for mental wellness reflection.
 
-Project Documentation:-
 
 
 
